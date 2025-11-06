@@ -17,19 +17,21 @@
 
 ---
 
-<a href="#content">CONTENT TO INCLUDE</a>
-- <a href="#lc-requirements">LaunchCode Requirements</a> (<a href="#requirement-resources">Resources</a>)
-- <a href="#additional-content">Additional Content to Consider</a> (<a href="#additional-resources">Resources</a>)
-- <a href="#templates-examples">Templates & Examples</a> (<a href="#template-resources">Resources</a>)
-
-<a href="#markdown-syntax">MARKDOWN SYNTAX</a>
-- <a href="#basics-beyond">The Basics & Beyond</a> (<a href="#markdown-resources">Resources</a>)
-
-<a href="#pop">MAKING IT POP</a>
-- <a href="#formatting-code">Formatting Code</a> (<a href="#formatting-code-resources">Resources</a>)
-- <a href="#badges">Badges</a> (<a href="#badge-resources">Resources</a>)
-- <a href="#emoji">Emoji</a>
-- <a href="#collapsed-sections">Collapsed Sections</a>
+<a href="#content">CONTENT TO INCLUDE</a><br />
+- <a href="#lc-requirements">LaunchCode Requirements</a> (<a href="#requirement-resources">Resources</a>)<br />
+- <a href="#additional-content">Additional Content to Consider</a> (<a href="#additional-resources">Resources</a>)<br />
+- <a href="#templates-examples">Templates & Examples</a> (<a href="#template-resources">Resources</a>)<br />
+   
+<a href="#markdown-syntax">MARKDOWN SYNTAX</a><br />
+- <a href="#basics-beyond">The Basics & Beyond</a> (<a href="#markdown-resources">Resources</a>)<br />
+  
+<a href="#pop">MAKING IT POP</a><br />
+- <a href="#formatting-code">Formatting Code</a> (<a href="#formatting-code-resources">Resources</a>)<br />
+- <a href="#images">Images</a><br />
+- <a href="#links">Links</a><br />
+- <a href="#badges">Badges</a> (<a href="#badge-resources">Resources</a>)<br />
+- <a href="#emoji">Emoji</a><br />
+- <a href="#collapsed-sections">Collapsed Sections</a><br />
 - <a href="#alerts">Alerts</a>
 
 ---
@@ -48,7 +50,7 @@ LaunchCode students: You are required to include each of the following with your
 - [X] Description of unsolved problems and/or future features
 
 <a name="requirement-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 
 | Source | Link |
 |   ---: | :--- |
@@ -68,7 +70,7 @@ LaunchCode students: You are required to include each of the following with your
 - [ ] Testing framework(s) and coverage metrics (if applicable)
 
 <a name="additional-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 
 | Source | Link |
 |   ---: | :--- |
@@ -85,15 +87,16 @@ LaunchCode students: You are required to include each of the following with your
 ---
 <a name="templates-examples"></a>
 ### 💡 Templates & Examples
-There are plenty of examples and templates out there to inspire you. A few are linked in the table below.
+There are plenty of examples and templates out there to inspire you, several of which are linked in the table below. 
+
+The first one is the README of a project you are already familiar with if you've gone through Unit 2 of LaunchCode's Software Development program... the full-stack Art Gallery project. Feel free to use it as a general template, but make yours unique and fit your project instead of mine!
 
 <a name="template-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 
 | Source | Link | Description |
 |   ---: | :--- | :---        |
 | Carolista | [Art Gallery Project README](https://github.com/Carolista/swd-unit2-java-art-gallery-project) | My full-stack demo project for live coding for my students at [LaunchCode St. Louis](https://www.launchcode.org) |
-| PurpleBooth | [README Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) | Basic, no-frills example of multiple sections
 | FastAPI | [FastAPI README](https://github.com/fastapi/fastapi) | Great overall example — well organized and pops visually |
 | public-apis | [public-apis README](https://github.com/public-apis/public-apis) | Good example of links and tables |
 | iina | [IINA README](https://github.com/iina/iina) | Smaller-scale, but has some good visual interest with alerts and code blocks |
@@ -151,7 +154,7 @@ Tables
 ... and so much more! The resources below will teach you quite a lot in a short period of time and are great for reference anytime.
 
 <a name="markdown-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 | Source | Link |
 |   ---: | :--- |
 | Markdown Guide | [Basic Syntax](https://www.markdownguide.org/basic-syntax/) |
@@ -187,12 +190,106 @@ sayHello("Bob"); // Hello, Bob!
 ```
 
 <a name="formatting-code-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 
 | Source | Link |
 |   ---: | :--- |
 | GitHub Docs | [Formatting Code Blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) |
 | @jincheng9 on GitHub | [Markdown Supported Languages for Code Blocks](https://github.com/jincheng9/markdown_supported_languages) |
+
+---
+
+<a name="links"></a>
+### 🔗 Links
+
+Links can be added using either markdown syntax or HTML. 
+
+*Example:*
+
+```markdown
+[React Documentation](https://react.dev/reference/react)
+```
+or
+```markdown
+<a href="https://react.dev/reference/react" alt="React Documentation">React Documentation<a>
+```
+[React Documentation](https://react.dev/reference/react)
+
+---
+
+<a name="images"></a>
+### 🖼️ Images
+
+There are 3 ways to add images to your README:
+
+#### METHOD 1
+Include an image in your project structure and link it using a relative path. 
+
+*Example:*
+
+  ```markdown
+  <!-- Markdown syntax; clean but can't control size -->
+  ![LaunchCode logo](images/LaunchCode_ltblue.png)
+  ```
+  or
+  ```markdown
+  <!-- HTML - less easy to read but can control size and horizontal alignment -->
+  <div align="middle">
+      <img src="images/LaunchCode_ltblue.png" alt="LaunchCode logo" width="50%" />
+  </div>
+  ```
+<div align="middle">
+  <img src="images/LaunchCode_ltblue.png" alt="LaunchCode logo" width="50%" />
+</div>
+
+<br />
+
+#### METHOD 2
+Link to an image you are hosting elsewhere on the web. 
+
+*Example:*
+
+```markdown
+  <div align="middle">
+      <img 
+          src="https://github.com/Carolista/carolista.github.io/blob/main/images/cwc-logo.png" 
+          alt="CodeWithCarrie logo" 
+          width="50%" />
+  </div>
+  ```
+<div align="middle">
+      <img 
+          src="https://github.com/Carolista/carolista.github.io/blob/main/images/cwc-logo.png" 
+          alt="CodeWithCarrie logo" 
+          width="50%" />
+</div>
+
+<br />
+
+#### METHOD 3
+Edit your README on GitHub and drag-and-drop the image. GitHub automatically stores it and provides a URL.
+
+*Example:*
+
+```markdown
+  <div align="middle">
+      <img 
+          width="60" 
+          height="60" 
+          alt="tiny-rocket" 
+          src="https://github.com/user-attachments/assets/d30a614e-e024-4ee3-8906-dc96d495432c" />
+  </div>
+  ```
+<div align="middle">
+    <img 
+        width="60" 
+        height="60" 
+        alt="tiny-rocket" 
+        src="https://github.com/user-attachments/assets/d30a614e-e024-4ee3-8906-dc96d495432c" />
+</div>
+
+> [!WARNING]
+> This method is unreliable, and sometimes visitors will see an error message that says the image is private, even though your repo is public. I recommend using one of the other two methods to avoid this issue.
 
 ---
 
@@ -210,7 +307,7 @@ You can even add icons: ![JavaScript](https://img.shields.io/badge/JavaScript-F0
 ![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=20232A)
 
 <a name="badge-resources"></a>
-#### 🔗 Resources
+#### 📔 Resources
 
 | Source | Link |
 |   ---: | :--- |
@@ -225,7 +322,7 @@ You can even add icons: ![JavaScript](https://img.shields.io/badge/JavaScript-F0
 You can copy-and-paste emoji into your `.md` document, or if you are editing on GitHub, you can use `:emojicode:` (similar to Slack) with the tab key to insert emoji as you go.
 
 > [!TIP]
-> For portfolio project READMEs, use emoji sparingly.
+> For portfolio project READMEs, use emoji sparingly and tastefully so they complement your content and don't distract from it.
 
 ---
 
